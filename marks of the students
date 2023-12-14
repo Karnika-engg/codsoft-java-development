@@ -1,0 +1,43 @@
+package general;
+
+import java.util.Scanner;
+
+public class marksofthestudents {
+
+	public static void main(String[] args) {
+
+	      float[] marks = new float[8];
+	      float sum=0, avg;
+	      int i;
+	      Scanner scan = new Scanner(System.in);
+	      
+	      System.out.print("Enter Marks Obtained in 8 Subjects of the student: ");
+	      for(i=0; i<8; i++)
+	         marks[i] = scan.nextFloat();
+	      
+	      for(i=0; i<8; i++)
+	         sum = sum + marks[i];
+	      avg = sum/8;
+	      
+	      System.out.print("\nfinalized grade of the student = ");
+	      if(avg>=90)
+	          System.out.println("A+ grade");
+	       else if(avg>=89 && avg<90)
+	          System.out.println("A grade");
+	       else if(avg>=85 && avg<89)
+	          System.out.println("B+ grade");
+	       else if(avg>=79 && avg<85)
+	          System.out.println("B grade");
+	       else if(avg>=68 && avg<79)
+	          System.out.println("C grade");
+	       else if(avg>=50 && avg<68)
+	          System.out.println("D grade");
+	       else
+	          System.out.println("Fail");
+	    }
+	 
+		
+
+	}
+
+
