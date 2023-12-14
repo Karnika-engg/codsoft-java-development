@@ -16,10 +16,12 @@ public class marksofthestudents {
 	         marks[i] = scan.nextFloat();
 	      
 	      for(i=0; i<8; i++)
+	  
 	         sum = sum + marks[i];
-	      avg = sum/8;
-	      
-	      System.out.print("\nfinalized grade of the student = ");
+	         System.out.println("Total marks obtained by the student="+sum);
+	      avg = sum/8;  
+	      System.out.println("Average percentage obtained by the student="+avg);
+	      System.out.print("\nFinalized grade obtained by the student= ");
 	      if(avg>=90)
 	          System.out.println("A+ grade");
 	       else if(avg>=89 && avg<90)
