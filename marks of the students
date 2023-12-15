@@ -11,7 +11,7 @@ public class marksofthestudents {
 	      int i;
 	      Scanner scan = new Scanner(System.in);
 	      
-	      System.out.print("Enter Marks Obtained in 8 Subjects of the student: ");
+	      System.out.print("Enter Marks Obtained in 8 Subjects of the student= ");
 	      for(i=0; i<8; i++)
 	         marks[i] = scan.nextFloat();
 	      
